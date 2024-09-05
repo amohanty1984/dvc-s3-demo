@@ -15,3 +15,20 @@ pip install awscli
 aws configure
 
 dvc remote add -d dvcstore s3://dvc-backup-storage-am
+
+dvc add data/raw/student_performance.csv
+
+dvc add data/processed/student_performance_pca.csv 
+
+dvc status
+
+git status
+
+git add .
+
+git commit -m "initial commit with pc2"
+
+dvc push
+
+git push origin master
+
