@@ -1,0 +1,17 @@
+git init
+
+dvc init
+
+https://github.com/amohanty1984/dvc-s3-demo.git
+
+
+git remote add origin https://github.com/amohanty1984/dvc-s3-demo.git
+
+
+pip install dvc[s3]
+
+pip install awscli
+
+aws configure
+
+dvc remote add -d dvcstore s3://dvc-backup-storage-am
